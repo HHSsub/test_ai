@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig(({ mode }: { mode: string }) => {
   // 환경별 base 경로 설정
-  const base = mode === 'production' ? "/upnexx/" : "/"
+  const base = mode === 'production' ? "/test_ai/" : "/"
   
   return {
     plugins: [react()],

@@ -1,4 +1,4 @@
-# upnexx - AI 광고 영상 생성 SaaS
+# Test AI - AI 광고 영상 생성 SaaS
 
 키워드 몇 개만 입력하면 AI가 자동으로 광고 영상을 생성하는 혁신적인 SaaS 플랫폼입니다.
 
@@ -56,8 +56,13 @@ pnpm run preview
 # 빌드
 pnpm run build
 
-# dist 폴더를 정적 호스팅 서비스에 업로드
+# GitHub Pages 배포
+pnpm run deploy
 ```
+
+### 배포 URL
+
+**Live Demo**: https://jepark-hub.github.io/test_ai
 
 ## 🎨 디자인 시스템
 
@@ -98,48 +103,6 @@ pnpm run build
 - 한국어 (ko) - 기본
 - 영어 (en)
 
-언어 추가 방법:
-1. `src/lib/translations.ts`에 번역 추가
-2. 컴포넌트에서 `useLanguage` 훅 사용
+## �� 라이선스
 
-## 📊 분석 및 추적
-
-### 주요 이벤트
-
-- `keyword_submitted`: 키워드 입력 완료
-- `mock_generated`: 모의 결과 생성 완료
-- `card_explained`: AdScore 설명 클릭
-- `variation_clicked`: 변주 생성 클릭
-- `signup_clicked`: 회원가입 클릭
-- `demo_requested`: 데모 요청 클릭
-
-## 🧪 테스트
-
-```bash
-# 린트 검사
-pnpm run lint
-
-# 타입 검사
-pnpm run type-check
-```
-
-## 📄 라이선스
-
-MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 🤝 기여하기
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📞 연락처
-
-- **Email**: support@upnexx.com
-- **Website**: https://upnexx.github.io
-
----
-
-**⚠️ 중요 고지**: 이 프로젝트의 모든 예측치는 AI 모델 기반의 추정값이며 실제 성과와 다를 수 있습니다.
+MIT License

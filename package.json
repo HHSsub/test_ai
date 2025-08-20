@@ -1,7 +1,8 @@
 {
-  "name": "shadcnui",
+  "name": "test_ai",
   "type": "module",
   "packageManager": "pnpm@8.10.0",
+  "homepage": "https://jepark-hub.github.io/test_ai",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
