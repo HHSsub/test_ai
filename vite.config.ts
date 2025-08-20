@@ -5,25 +5,20 @@ import { fileURLToPath } from "url"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export default defineConfig(({ mode }: { mode: string }) => {
-  // 환경별 base 경로 설정
-  const base = mode === 'production' ? "/test_ai/" : "/"
-  
-  return {
-    plugins: [react()],
-    base,
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
-      },
+export default defineConfig({
+  plugins: [react()],
+  base: "/test_ai/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
-    build: {
-      outDir: 'dist',
-      assetsDir: 'assets'
-    },
-    server: {
-      host: true,
-      port: 5173
-    }
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  },
+  server: {
+    host: true,
+    port: 5173
   }
 })
