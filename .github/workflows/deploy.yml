@@ -1,53 +1,52 @@
-# .github/workflows/deploy.yml (진짜 최종 수정본)
-
 name: Deploy React App to GitHub Pages
 
 on:
   push:
     branches:
       - main
-  
-  
-# 2. permissions 설정을 추가하여 배포에 필요한 권한을 부여합니다.
+  workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 3. concurrency 설정을 jobs와 분리하여 올바른 위치에 둡니다.
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # 4. job 이름을 build-and-deploy 와 같이 명확하게 변경합니다.
   build-and-deploy:
-  # 5. 불필요하고 오류를 유발하던 environment 설정을 제거합니다.
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'pnpm'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
 
-    - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
-    - name: Build
-      run: pnpm run build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
+      - name: Build
+        run: pnpm run build
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './dist'
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
