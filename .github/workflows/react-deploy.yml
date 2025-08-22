@@ -28,8 +28,11 @@ jobs:
           node-version: '18'
           cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.x # pnpm 버전 지정
+          run_install: false # pnpm install은 별도 단계에서 실행
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
