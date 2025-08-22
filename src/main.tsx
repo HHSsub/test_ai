@@ -1,4 +1,4 @@
-// src/main.tsx (수정 후)
+// src/main.tsx (최종 수정 코드)
 
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     }
   ],
   {
-    basename: "/test_ai/", // 이 부분이 가장 중요합니다!
+    basename: "/test_ai/", // 이 부분이 가장 중요합니다! GitHub Pages 저장소 이름과 일치해야 합니다.
   }
 );
 
