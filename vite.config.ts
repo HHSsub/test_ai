@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // 이 부분을 수정합니다.
+  base: "/tets_ai/", // 이 부분을 수정합니다.
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
