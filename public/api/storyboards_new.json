@@ -1,0 +1,69 @@
+// public/api/storyboards_new.json (신규 파일)
+[
+  {
+    "id": "new-1",
+    "mode": "new",
+    "presetTags": ["UGC", "Commercial"],
+    "durationSec": 15,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/FF5733/FFFFFF?text=New+SB+1",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Dynamic opening shot.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF5733/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Product showcase.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF5733/FFFFFF?text=S2", "camera": "zoom" }
+    ]
+  },
+  {
+    "id": "new-2",
+    "mode": "new",
+    "presetTags": ["Talking Avatar", "VFX"],
+    "durationSec": 30,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/33FF57/FFFFFF?text=New+SB+2",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Avatar introduction.", "thumbnailUrl": "https://via.placeholder.com/150x100/33FF57/FFFFFF?text=S1", "camera": "dolly" },
+      { "index": 2, "title": "Scene 2", "copy": "Complex visual effects.", "thumbnailUrl": "https://via.placeholder.com/150x100/33FF57/FFFFFF?text=S2", "camera": "handheld" }
+    ]
+  },
+  {
+    "id": "new-3",
+    "mode": "new",
+    "presetTags": ["Commercial", "Action"],
+    "durationSec": 60,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/3357FF/FFFFFF?text=New+SB+3",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Fast-paced action.", "thumbnailUrl": "https://via.placeholder.com/150x100/3357FF/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Dramatic reveal.", "thumbnailUrl": "https://via.placeholder.com/150x100/3357FF/FFFFFF?text=S2", "camera": "zoom" }
+    ]
+  },
+  {
+    "id": "new-4",
+    "mode": "new",
+    "presetTags": ["UGC", "VFX"],
+    "durationSec": 15,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/FF33A1/FFFFFF?text=New+SB+4",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "User-generated content.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF33A1/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Creative effects.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF33A1/FFFFFF?text=S2", "camera": "zoom" }
+    ]
+  },
+  {
+    "id": "new-5",
+    "mode": "new",
+    "presetTags": ["Talking Avatar", "Commercial"],
+    "durationSec": 30,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/A1FF33/FFFFFF?text=New+SB+5",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Professional avatar.", "thumbnailUrl": "https://via.placeholder.com/150x100/A1FF33/FFFFFF?text=S1", "camera": "dolly" },
+      { "index": 2, "title": "Scene 2", "copy": "Brand message.", "thumbnailUrl": "https://via.placeholder.com/150x100/A1FF33/FFFFFF?text=S2", "camera": "handheld" }
+    ]
+  },
+  {
+    "id": "new-6",
+    "mode": "new",
+    "presetTags": ["Action", "VFX"],
+    "durationSec": 60,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/33A1FF/FFFFFF?text=New+SB+6",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "High-energy sequence.", "thumbnailUrl": "https://via.placeholder.com/150x100/33A1FF/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Stunning visual effects.", "thumbnailUrl": "https://via.placeholder.com/150x100/33A1FF/FFFFFF?text=S2", "camera": "zoom" }
+    ]
+  }
+]
