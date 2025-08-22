@@ -1,26 +1,29 @@
-# .github/workflows/deploy.yml (최종본)
+# .github/workflows/deploy.yml (진짜 최종 수정본)
+
 name: Deploy React App to GitHub Pages
 
+# 1. on: push, workflow_dispatch를 최상단에 둡니다.
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
+# 2. permissions 설정을 추가하여 배포에 필요한 권한을 부여합니다.
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 3. concurrency 설정을 jobs와 분리하여 올바른 위치에 둡니다.
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # 4. job 이름을 build-and-deploy 와 같이 명확하게 변경합니다.
+  build-and-deploy:
+    # 5. 불필하고 오류를 유발하던 environment 설정을 제거합니다.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
