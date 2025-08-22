@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-  base: "/test_ai/",
+  base: "./", // 이 부분을 수정합니다.
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
