@@ -1,0 +1,75 @@
+// public/api/storyboards_existing.json (신규 파일)
+[
+  {
+    "id": "existing-1",
+    "mode": "existing",
+    "presetTags": ["Brand Optimized", "Commercial"],
+    "durationSec": 15,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Existing+SB+1",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Brand-specific intro.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF5733/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Product with brand guidelines.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF5733/FFFFFF?text=S2", "camera": "zoom" }
+    ],
+    "brandFitScore": 95
+  },
+  {
+    "id": "existing-2",
+    "mode": "existing",
+    "presetTags": ["Corporate", "Talking Avatar"],
+    "durationSec": 30,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/33FF57/FFFFFF?text=Existing+SB+2",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Corporate message.", "thumbnailUrl": "https://via.placeholder.com/150x100/33FF57/FFFFFF?text=S1", "camera": "dolly" },
+      { "index": 2, "title": "Scene 2", "copy": "Professional tone.", "thumbnailUrl": "https://via.placeholder.com/150x100/33FF57/FFFFFF?text=S2", "camera": "handheld" }
+    ],
+    "brandFitScore": 92
+  },
+  {
+    "id": "existing-3",
+    "mode": "existing",
+    "presetTags": ["E-commerce", "VFX"],
+    "durationSec": 60,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/3357FF/FFFFFF?text=Existing+SB+3",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "E-commerce product display.", "thumbnailUrl": "https://via.placeholder.com/150x100/3357FF/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Dynamic product animation.", "thumbnailUrl": "https://via.placeholder.com/150x100/3357FF/FFFFFF?text=S2", "camera": "zoom" }
+    ],
+    "brandFitScore": 90
+  },
+  {
+    "id": "existing-4",
+    "mode": "existing",
+    "presetTags": ["Brand Optimized", "UGC"],
+    "durationSec": 15,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/FF33A1/FFFFFF?text=Existing+SB+4",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "User-generated content with brand elements.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF33A1/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "Authentic brand story.", "thumbnailUrl": "https://via.placeholder.com/150x100/FF33A1/FFFFFF?text=S2", "camera": "zoom" }
+    ],
+    "brandFitScore": 98
+  },
+  {
+    "id": "existing-5",
+    "mode": "existing",
+    "presetTags": ["Corporate", "Commercial"],
+    "durationSec": 30,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/A1FF33/FFFFFF?text=Existing+SB+5",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Professional brand presentation.", "thumbnailUrl": "https://via.placeholder.com/150x100/A1FF33/FFFFFF?text=S1", "camera": "dolly" },
+      { "index": 2, "title": "Scene 2", "copy": "Key message delivery.", "thumbnailUrl": "https://via.placeholder.com/150x100/A1FF33/FFFFFF?text=S2", "camera": "handheld" }
+    ],
+    "brandFitScore": 93
+  },
+  {
+    "id": "existing-6",
+    "mode": "existing",
+    "presetTags": ["E-commerce", "Action"],
+    "durationSec": 60,
+    "thumbnailUrl": "https://via.placeholder.com/300x200/33A1FF/FFFFFF?text=Existing+SB+6",
+    "scenes": [
+      { "index": 1, "title": "Scene 1", "copy": "Dynamic e-commerce ad.", "thumbnailUrl": "https://via.placeholder.com/150x100/33A1FF/FFFFFF?text=S1", "camera": "pan" },
+      { "index": 2, "title": "Scene 2", "copy": "High-impact product shots.", "thumbnailUrl": "https://via.placeholder.com/150x100/33A1FF/FFFFFF?text=S2", "camera": "zoom" }
+    ],
+    "brandFitScore": 91
+  }
+]
